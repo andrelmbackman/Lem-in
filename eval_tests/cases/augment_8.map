@@ -1,0 +1,70 @@
+16
+##start
+a 1 0
+b 20 0
+c 30 0
+d 40 0
+e 50 0
+f 60 0
+g 7 0
+h 80 0
+i 90 0
+j 10 0
+##end
+k 11 0
+l 12 0
+m 13 0
+n 14 0
+o 15 0
+p 16 0
+q 17 0
+a-b
+b-c
+c-d
+d-e
+e-f
+f-a
+b-g
+g-h
+h-i
+i-j
+j-c
+j-k
+k-l
+l-m
+m-d
+o-a
+o-b
+o-c
+o-d
+o-e
+o-f
+p-g
+p-h
+p-i
+p-j
+p-c
+p-b
+q-c
+q-j
+q-k
+q-l
+q-m
+q-d
+#         g - h
+#        / \ / \
+#   a - b - p - i
+#  / \ / \ / \ /
+# f - o - c - j
+#  \ / \ / \ / \
+#   e - d - q - k
+#        \ / \ /
+#         m - l
+# Here is the number of lines required: 9
+#
+#
+# Correct Vertex disjoint paths:
+#
+# PATH [1] = a -> b -> p -> j -> k
+# PATH [2] = a -> o -> c -> q -> k
+# PATH [3] = a -> f -> e -> d -> m -> l -> k

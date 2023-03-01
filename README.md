@@ -1,6 +1,6 @@
 # Lem-in
 
-Lem-in is an algorithmic project that aims to find the quickest way to get n ants across a farm.
+Lem-in is an algorithmic project that aims to find the quickest way to get n ants across a farm. Pair project created in collaboration with Leo Tran. https://github.com/Officialrwn
 
 ### Project Goals
 

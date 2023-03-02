@@ -39,13 +39,13 @@ The farm is defined by two parts: rooms and links. The rooms are defined by name
 
 ### Usage
 ##### To compile the program, run:
-     make
+     $> make
 
-##### To execute the program, run the following command:
-     ./lem-in < [path_to_file]
+##### To execute the program, run:
+     $> ./lem-in < [path_to_file]
 where [path_to_file] is the path to the file that contains the definition of the farm.    
 ##### Or simply make \<test1-test4\>, such as:
-      make test1
+      $> make test1
 
 ### Example
     $> ./lem-in < eval_tests/cases/solution.map

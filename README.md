@@ -2,7 +2,7 @@
 
 Lem-in is an algorithmic project that aims to find the quickest way to get n ants across a farm. Pair project created in collaboration with Leo Tran. https://github.com/Officialrwn
 
-### Project Goals
+## Project Goals
 
 The main goal of the project is to find the shortest path to get all ants from the start room to the end room. This path should be represented by the least number of lines possible. At each turn, only the ants that moved should be displayed. Each ant can move only once per turn, and it can only move through a tube. The room at the receiving end must be empty. The solution must be displayed on the standard output in the following format:
 
@@ -14,20 +14,20 @@ The main goal of the project is to find the shortest path to get all ants from t
 
 where 1, 2, and 3 represent the ants' numbers (going from 1 to number_of_ants), and A, B and C represent the rooms' names.
 
-### How the algorithm works
-#### Breadth-first search finds the shortest path and/or augmenting paths
+## How the algorithm works
+### Figure 1.1 Breadth-first search finds the shortest path and/or augmenting paths
 ![bfs](https://user-images.githubusercontent.com/88145164/222154617-88aae94e-4f88-4966-bdd7-ace0b8bc5b13.gif)
 
-#### The ants get sent with optimal distribution of flow to prevent bottlenecks
+### Figure 1.2 The ants get sent with optimal distribution of flow to prevent bottlenecks
 ![send_ants](https://user-images.githubusercontent.com/88145164/222154821-677c3183-3628-4d85-8aff-8ce2162a9d84.gif)
 #### An example of what this looks like in practice can be found at the bottom of this README.
 
-### Description of the Farm
+## Description of the Farm
 
 The farm is represented by rooms that are connected through links. The farm has a start room and an end room. Ants start in the start room and must find their way to the end room. Each room can only contain one ant at a time. The goal is to bring all the ants to the end room in as few turns as possible.
 
 The farm is defined by two parts: rooms and links. The rooms are defined by name coord_x coord_y, and the links are defined by name1-name2. All of it is broken by comments that start with #. The rooms’ names won’t necessarily be numbers, and they won’t necessarily be in the right and continuous order. Rooms’ coordinates will always be integers. Lines that start with ## are commands modifying the properties of the line that comes right after. For example, ##start signals the ant farm’s entrance and ##end its exit. Any unknown command will be ignored. Any non-compliant or empty lines will automatically stop the ant farm’s reading, as well as the orderly processing of the acquired data. If there isn’t enough data to process normally, the program will display an error message.
-### Rules and Constraints
+## Rules and Constraints
 
     The executable file must be named lem-in.
     The program must be written in C in accordance with the Norm.
@@ -37,7 +37,7 @@ The farm is defined by two parts: rooms and links. The rooms are defined by name
     Your program cannot have memory leaks.
     You must submit a Makefile. The Makefile needs to compile the project. It can only recompile the program if necessary.
 
-### Usage
+## Usage
 ##### To compile the program, run:
      $> make
 
@@ -47,7 +47,7 @@ where [path_to_file] is the path to the file that contains the definition of the
 ##### Or simply make \<test1-test4\>, such as:
       $> make test1
 
-### Example
+## Example (see Figure 1.2)
     $> ./lem-in < eval_tests/cases/solution.map
     10
     ##start
